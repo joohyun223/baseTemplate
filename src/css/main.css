@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+html{overflow-y:scroll}
+body{position:relative;color:#666;font-family:Roboto, Noto Sans KR, sans-serif;font-weight:400;font-size:16px;line-height:1.5;letter-spacing:-.025em;word-break:keep-all;word-wrap:break-word}
+body,div,p,header,section,nav,footer,article,figure,aside,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,form,fieldset,input,textarea,button,select,span,strong,b,em,a,label,sup,sub{margin:0;padding:0;box-sizing:border-box}
+header,footer,section,article,nav,aside{display:block;padding:0;margin:0}
+table{width:100%;border-collapse:collapse;empty-cells:show;border-spacing:0}
+td,th{position:relative;font-weight:400;margin:0;padding:0;word-break:break-all}
+h1,h2,h3,h4,h5,h6{color:#000;line-height:1.2}
+img{max-width:100%;border:0;vertical-align:top}
+fieldset,iframe{border:0;vertical-align:top}
+textarea{resize:none}
+ul,ol{list-style:none}
+em,address{font-style:normal}
+u{text-underline-position:under}
+hr,legend{display:none}
+caption{overflow:hidden;position:static;top:0;left:0;width:0;height:0;font-size:0;line-height:0}
+strong, b{font-weight:500}
+blockquote,q{quotes:none}
+button{margin:0;padding:0;border:0;background:none;cursor:pointer}
+label{vertical-align:middle;cursor:pointer}
+:before,:after{box-sizing:border-box}
+pre{line-height: .8}
+
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration:none}
+
+.wrap {margin-bottom:50px;}
+
+.wrap h1 {margin-bottom:20px}
+
+.wrap .leftArea {position:fixed; overflow-y:auto; top:0; width:350px; height:100vh; padding:0 50px; border:#000 solid 3px;}
+.wrap .leftArea .listTit{display:block; margin-top:40px; font-weight:bold; font-size:25px;}
+.wrap .leftArea .list {margin:20px 0 0 0;}
+.wrap .leftArea .list .cont{margin-bottom: 20px}
+
+.wrap .conArea {margin:40px 50px 0 400px;}
+.wrap .conArea {margin-top: 20px}
+.wrap .conArea .comTit {margin-bottom:20px}
+.wrap .conArea .refTit {margin-bottom:20px}
+.wrap .conArea .refTit ol{margin:20px 0 0 20px; list-style:disc;}
+.wrap .conArea section {margin-bottom:60px;}
+.wrap .conArea section .sectionTit {margin-bottom: 20px}
+.wrap .conArea section .sectionTit h2, .wrap .conArea section .sectionTit h3 {margin-bottom: 20px}
+.wrap .conArea .example {padding:20px; border:solid #f8f9fa 2px;}
+.wrap .conArea .codeArea { background-color:#f8f9fa;}
+.wrap .conArea .ex {margin:20px 0;}
+
+.contents {padding: 10px; margin-top: 60px;}
+
+table, table th, table td {border:solid #000 1px}
+table th, table td {padding:20px}
+table th {text-align: left;font-weight: bold;color:#000;}
+
+@media screen and (max-width: 812px) {
+    .wrap .leftArea {position:fixed; overflow-x:scroll; width:100%; height:75px; padding:0; border:#000 solid 3px; background: #fff;z-index:100;}
+    .wrap .leftArea .listTit{display:none;}
+    .wrap .leftArea .list .cont{padding:0 20px;}
+    .wrap .leftArea .list {display:flex;height:44px;overflow-x:auto;}
+
+    .wrap .conArea {margin:0; margin-top:75px; width:100%;padding: 0 10px;}
+
+    table {table-layout: fixed;}
+}
