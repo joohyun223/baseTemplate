@@ -2,7 +2,11 @@
     <div class="conArea">
         <div class="comTit">
             <h1>Dropdown</h1>
-            <p> 부트스트랩 스타일에 기반한 드롭다운 메뉴입니다.</p>
+            <p> 
+              부트스트랩 스타일에 기반한 드롭다운 메뉴입니다.
+              <br>
+              .item-wrap 요소의 max-height 속성으로 드롭다운메뉴의 높이값을 지정 할 수 있습니다.
+            </p>
         </div>
 
         <section class="preview">
@@ -13,16 +17,34 @@
               <TDropdown classes="btn-primary" btnText="single dropdown button" @dropClicked="dropBtnEvt" @menuClicked="clickEvt" class="toggle-dropdown">
                 <TDropdownMenuItem> Action </TDropdownMenuItem>
                 <TDropdownMenuItem> Another action </TDropdownMenuItem>
-                <TDropdownMenuItem> Something else here </TDropdownMenuItem>
+                <TDropdownMenuItem> Something else here1 </TDropdownMenuItem>
+                <TDropdownMenuItem> Something else here2 </TDropdownMenuItem>
+                <TDropdownMenuItem> Something else here3 </TDropdownMenuItem>
+                <TDropdownMenuItem> Something else here4 </TDropdownMenuItem>
+                <TDropdownMenuItem> Something else here5 </TDropdownMenuItem>
+                <TDropdownMenuItem> Something else here6 </TDropdownMenuItem>
+                <TDropdownMenuItem> Something else here7 </TDropdownMenuItem>
+                <TDropdownMenuItem> Something else here8 </TDropdownMenuItem>
+                <TDropdownMenuItem> Something else here9 </TDropdownMenuItem>
+                <TDropdownMenuItem> Something else here10 </TDropdownMenuItem>
               </TDropdown>
             </div>
             <div class="codeArea">
               <pre>
-                <p>&lt;TDropdown safeId=&quot;dropdownBtn&quot; classes=&quot;btn-primary&quot; btnText=&quot;single dropdown button&quot; @dropClicked=&quot;dropBtnEvt&quot; @:menuClicked=&quot;clickEvt&quot; class=&quot;toggle-dropdown&quot;&gt;</p>
-                <p>&nbsp; &lt;TDropdownMenuItem&gt; Action &lt;/TDropdownMenuItem&gt;</p>
-                <p>&nbsp; &lt;TDropdownMenuItem&gt; Another action &lt;/TDropdownMenuItem&gt;</p>
-                <p>&nbsp; &lt;TDropdownMenuItem&gt; Something else here &lt;/TDropdownMenuItem&gt;</p>
-                <p>&lt;/TDropdown&gt;</p>
+                <p>&lt;TDropdown classes=&quot;btn-primary&quot; btnText=&quot;single dropdown button&quot; @dropClicked=&quot;dropBtnEvt&quot; @menuClicked=&quot;clickEvt&quot; class=&quot;toggle-dropdown&quot;&gt;</p>
+                <p>&nbsp; &nbsp; &lt;TDropdownMenuItem&gt; Action &lt;/TDropdownMenuItem&gt;</p>
+                <p>&nbsp; &nbsp; &lt;TDropdownMenuItem&gt; Another action &lt;/TDropdownMenuItem&gt;</p>
+                <p>&nbsp; &nbsp; &lt;TDropdownMenuItem&gt; Something else here1 &lt;/TDropdownMenuItem&gt;</p>
+                <p>&nbsp; &nbsp; &lt;TDropdownMenuItem&gt; Something else here2 &lt;/TDropdownMenuItem&gt;</p>
+                <p>&nbsp; &nbsp; &lt;TDropdownMenuItem&gt; Something else here3 &lt;/TDropdownMenuItem&gt;</p>
+                <p>&nbsp; &nbsp; &lt;TDropdownMenuItem&gt; Something else here4 &lt;/TDropdownMenuItem&gt;</p>
+                <p>&nbsp; &nbsp; &lt;TDropdownMenuItem&gt; Something else here5 &lt;/TDropdownMenuItem&gt;</p>
+                <p>&nbsp; &nbsp; &lt;TDropdownMenuItem&gt; Something else here6 &lt;/TDropdownMenuItem&gt;</p>
+                <p>&nbsp; &nbsp; &lt;TDropdownMenuItem&gt; Something else here7 &lt;/TDropdownMenuItem&gt;</p>
+                <p>&nbsp; &nbsp; &lt;TDropdownMenuItem&gt; Something else here8 &lt;/TDropdownMenuItem&gt;</p>
+                <p>&nbsp; &nbsp; &lt;TDropdownMenuItem&gt; Something else here9 &lt;/TDropdownMenuItem&gt;</p>
+                <p>&nbsp; &nbsp; &lt;TDropdownMenuItem&gt; Something else here10 &lt;/TDropdownMenuItem&gt;</p>
+                <p>&nbsp; &lt;/TDropdown&gt;</p>
               </pre>
             </div>
 
@@ -57,8 +79,8 @@
               <div class="example">
                 <TDropdown safeId="dropdownBtn" classes="btn-primary mr-3" btnText="first" @menuClicked="clickEvt" class="toggle-dropdown">
                   <TDropdownMenuItem> Action </TDropdownMenuItem>
-                  <TDropdownMenuItem> Another action </TDropdownMenuItem>
-                  <TDropdownMenuItem> Something else here </TDropdownMenuItem>
+                  <!-- <TDropdownMenuItem> Another action </TDropdownMenuItem>
+                  <TDropdownMenuItem> Something else here </TDropdownMenuItem> -->
                 </TDropdown>
                 <TDropdown safeId="dropdownBtn" classes="btn-secondary mr-3" btnText="second" @menuClicked="clickEvt" class="toggle-dropdown">
                   <TDropdownMenuItem> Action </TDropdownMenuItem>
