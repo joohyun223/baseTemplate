@@ -2,7 +2,8 @@
 const path = require('path');
 // eslint-disable-next-line no-undef
 const ifs = require('os').networkInterfaces();
-
+const resolve = (dir) => path.join(__dirname, '..', dir);
+const resolve_module = (dir) => path.join(__dirname, dir);
 module.exports = {
   pages: {
     index: {
@@ -16,6 +17,15 @@ module.exports = {
         // eslint-disable-next-line no-undef
         '@': path.join(__dirname, 'src/')
       }
+    },
+    module:{
+      rules: [
+        { 
+          test: /\.js$/, 
+          loader: 'babel-loader?cacheDirectory', 
+          include: [resolve_module('/node_modules/vue-functional-calendar'), resolve_module('src'), resolve_module('test')] 
+        }
+      ]
     }
   },
   devServer: {

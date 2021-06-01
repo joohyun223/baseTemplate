@@ -11,31 +11,26 @@ export default {
   },
   data: () => {
     return {
-      testdata          : true,
-      placementData     : '',
-      tooltipEl         : null,
-      placementTopValue : null,
-      placementLeftValue: null,
-      paddingValue      : null
+      testdata     : true,
+      placementData: '',
+      tooltipEl    : null,
+      placementY   : null,
+      placementX   : null
     };
   },
   props: {
-    btnText                : {default: ''},
-    btnDataPlacement       : {default: ''},
-    btnTitle               : {default: ''},
-    tooltipText            : {default: ''},
-    propsPlacementData     : {default: ''},
-    arrowPlacementClass    : {default: ''},
-    propsPlacementTopValue : {default: ''},
-    propsPlacementLeftValue: {default: ''},
-    propsPaddingValue      : {default: ''}
+    btnText           : {default: ''},
+    btnTitle          : {default: ''},
+    tooltipText       : {default: ''},
+    propsPlacementData: {default: ''},
+    propsPlacementY   : {default: ''},
+    propsPlacementX   : {default: ''}
   },
   created: function() {
 
     this.placementData = this.propsPlacementData;
-    this.placementTopValue = this.propsPlacementTopValue;
-    this.placementLeftValue = this.propsPlacementLeftValue;
-    this.paddingValue = this.propsPaddingValue;
+    this.placementY = this.propsPlacementY;
+    this.placementX = this.propsPlacementX;
   },
   mounted: function() {
 
@@ -95,28 +90,23 @@ export default {
           {
             name   : 'arrow',
             options: {
-              // element: arrow,
-              // padding: ({ popper }) => popper.width / 2,
-              // padding: vm.paddingValue, // 5px from the edges of the popper
-              // padding: 50 // 5px from the edges of the popper
               padding: ({ popper, reference, placement }) => {
-                console.log('padding compute', popper, 'is popper' ,reference,'is reference' , placement, '---is placement');
-                reference.width / popper.width;
+                if (placement === 'bottom') {
+                  return popper.width / 5;
+                } else {
+                  return popper.width / 5;
+                }
               }
             },
           },
           {
             name   : 'offset',
             options: {
-              offset: [0, 10]
+              offset: [parseInt(this.placementX), parseInt(this.placementY)]
             },
-
           },
         ],
       });
-
-      // console.log(this.paddingValue);
-
     }
   }
 };

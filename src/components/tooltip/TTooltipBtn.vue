@@ -5,13 +5,13 @@
       @mouseleave="leavedMouse"
       @focus="focus"
       @blur="blur"
-      :data-placement="btnDataPlacement" 
+      :data-placement="propsPlacementData" 
       :title="btnTitle"
       type="button" 
       class="btn btn-secondary" 
       data-toggle="tooltip" 
+      v-html="btnText"
     >
-			{{btnText}}
 		</button>
 </template>
 
@@ -24,16 +24,16 @@ export default {
     };
   },
   props: {
-    btnText         : {default: ''},
-    btnDataPlacement: {default: ''},
-    btnTitle        : {default: ''}
+    btnText           : {default: ''},
+    propsPlacementData: {default: ''},
+    btnTitle          : {default: ''}
   },
   mounted: function() {
     // const testEl = document.getElementById('tooltip');
     // // console.log(testEl.disabled);
     // // console.log(this.disabledData);
     // testEl.disabled = this.disabledData;
-    // console.log(testEl.disabled);
+    // console.log(testEl.disabled);       
 
     
   },

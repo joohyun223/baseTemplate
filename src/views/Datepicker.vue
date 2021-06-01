@@ -176,6 +176,15 @@ export default {
       markedDates: ['6-3-2021']
     };
   },
+  mounted: function() {
+    const agent = navigator.userAgent.toLowerCase();
+    if ((navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf('msie') != -1)) { 
+
+      Array.prototype.forEach.call(document.querySelectorAll('.vfc-calendars-container') , function(itm) {
+        itm.style.display = 'block';
+      });
+    }
+  },
   methods: {
     dayClickEvt: function(evt) {
       console.log('day clicked', evt);
@@ -201,9 +210,19 @@ export default {
 
 <style scoped>
 .example{
-  width: 350px;
+  width: 330px;
 }
 .vfc-hide{
   cursor: not-allowed;
+}
+</style>
+
+<style>
+.vfc-popover-container{
+  position: relative;
+}
+
+.vfc-main-container{
+  width: 100% !important;
 }
 </style>

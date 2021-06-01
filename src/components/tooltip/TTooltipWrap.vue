@@ -1,6 +1,6 @@
 <template>
   <!-- <div role="tooltip" id="tooltipPopper"> -->
-  <div :class="arrowPlacementClass" class="tooltip" role="tooltip" id="tooltipPopper">
+  <div class="tooltip" role="tooltip" id="tooltipPopper">
     <div id="arrow" data-popper-arrow></div>
     <div class="tooltip-text" v-html="tooltipText"></div>
   </div>
@@ -15,8 +15,7 @@ export default {
     };
   },
   props: {
-    tooltipText        : {default: ''},
-    arrowPlacementClass: {default: ''}
+    tooltipText: {default: ''}
   },
   mounted: () => {
     

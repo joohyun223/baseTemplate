@@ -2,7 +2,7 @@
     <div class="conArea">
         <div class="comTit">
             <h1>Spinner</h1>
-            <p>해당 컴포넌트에 클래스를 추가하여 다양한 스타일의 스피너를 활용할 수 있습니다.</p>
+            <p><code>TSpinner</code> 컴포넌트에 클래스를 추가하여 다양한 스타일의 스피너를 활용할 수 있습니다.</p>
         </div>
 
         <section class="preview">

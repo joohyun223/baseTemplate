@@ -7,12 +7,11 @@
       @focus="focusEvt"
       @blur="blurEvt"
       :btnText="btnText"
-      :btnDataPlacement="btnDataPlacement"
+      :propsPlacementData="propsPlacementData"
       :btnTitle="btnTitle"
     ></TTooltipBtn>
     <TTooltipWrap 
       :tooltipText="tooltipText"
-      :arrowPlacementClass="arrowPlacementClass"
     ></TTooltipWrap>
   </div>
 </template>
